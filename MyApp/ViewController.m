@@ -16,6 +16,7 @@
 @property (nonatomic, strong) ImageZoomView *imageZoomView;
 @property (nonatomic, strong) UIImageView *girlPhotoImageView;
 
+
 @end
 
 @implementation ViewController

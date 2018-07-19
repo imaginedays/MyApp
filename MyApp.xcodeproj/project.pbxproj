@@ -17,6 +17,8 @@
 		768AF83620EC713B00DCC047 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768AF83520EC713B00DCC047 /* TodayViewController.m */; };
 		768AF83920EC713B00DCC047 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768AF83720EC713B00DCC047 /* MainInterface.storyboard */; };
 		768AF83D20EC713B00DCC047 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 768AF82F20EC713B00DCC047 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76CFCE5821006AE0004DC6D0 /* MyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFCE5721006AE0004DC6D0 /* MyAppTests.m */; };
+		76CFCE6221006CC6004DC6D0 /* PersonInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFCE6121006CC6004DC6D0 /* PersonInfomation.m */; };
 		76E6CAD220F73C8F007E54CD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6CAD120F73C8F007E54CD /* Photos.framework */; };
 		76E6CAD620F741E0007E54CD /* ImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6CAD520F741E0007E54CD /* ImageZoomView.m */; };
 		8912DDBACC43AEB7E962400C /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A31B87C81896BC532742D9B0 /* libPods-MyApp.a */; };
@@ -30,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 768AF82E20EC713B00DCC047;
 			remoteInfo = TodayExtension;
+		};
+		76CFCE5A21006AE0004DC6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768AF80A20EC5B1D00DCC047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768AF81120EC5B1D00DCC047;
+			remoteInfo = MyApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +76,11 @@
 		768AF83520EC713B00DCC047 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		768AF83820EC713B00DCC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		768AF83A20EC713B00DCC047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CFCE5521006AE0004DC6D0 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFCE5721006AE0004DC6D0 /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
+		76CFCE5921006AE0004DC6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CFCE6021006CC6004DC6D0 /* PersonInfomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonInfomation.h; sourceTree = "<group>"; };
+		76CFCE6121006CC6004DC6D0 /* PersonInfomation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonInfomation.m; sourceTree = "<group>"; };
 		76E6CAD120F73C8F007E54CD /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		76E6CAD420F741E0007E54CD /* ImageZoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageZoomView.h; sourceTree = "<group>"; };
 		76E6CAD520F741E0007E54CD /* ImageZoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageZoomView.m; sourceTree = "<group>"; };
@@ -94,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76CFCE5221006AE0004DC6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +123,7 @@
 			children = (
 				768AF81420EC5B1D00DCC047 /* MyApp */,
 				768AF83320EC713B00DCC047 /* TodayExtension */,
+				76CFCE5621006AE0004DC6D0 /* MyAppTests */,
 				768AF83020EC713B00DCC047 /* Frameworks */,
 				768AF81320EC5B1D00DCC047 /* Products */,
 				E348914724764137CD61E630 /* Pods */,
@@ -113,6 +135,7 @@
 			children = (
 				768AF81220EC5B1D00DCC047 /* MyApp.app */,
 				768AF82F20EC713B00DCC047 /* TodayExtension.appex */,
+				76CFCE5521006AE0004DC6D0 /* MyAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +143,7 @@
 		768AF81420EC5B1D00DCC047 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				76CFCE5F21006C8D004DC6D0 /* Tests */,
 				76E6CAD320F741C5007E54CD /* ImageZoomView */,
 				768AF81520EC5B1D00DCC047 /* AppDelegate.h */,
 				768AF81620EC5B1D00DCC047 /* AppDelegate.m */,
@@ -154,6 +178,24 @@
 				768AF83A20EC713B00DCC047 /* Info.plist */,
 			);
 			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		76CFCE5621006AE0004DC6D0 /* MyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				76CFCE5721006AE0004DC6D0 /* MyAppTests.m */,
+				76CFCE5921006AE0004DC6D0 /* Info.plist */,
+			);
+			path = MyAppTests;
+			sourceTree = "<group>";
+		};
+		76CFCE5F21006C8D004DC6D0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				76CFCE6021006CC6004DC6D0 /* PersonInfomation.h */,
+				76CFCE6121006CC6004DC6D0 /* PersonInfomation.m */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		76E6CAD320F741C5007E54CD /* ImageZoomView */ = {
@@ -217,6 +259,24 @@
 			productReference = 768AF82F20EC713B00DCC047 /* TodayExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		76CFCE5421006AE0004DC6D0 /* MyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CFCE5E21006AE0004DC6D0 /* Build configuration list for PBXNativeTarget "MyAppTests" */;
+			buildPhases = (
+				76CFCE5121006AE0004DC6D0 /* Sources */,
+				76CFCE5221006AE0004DC6D0 /* Frameworks */,
+				76CFCE5321006AE0004DC6D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CFCE5B21006AE0004DC6D0 /* PBXTargetDependency */,
+			);
+			name = MyAppTests;
+			productName = MyAppTests;
+			productReference = 76CFCE5521006AE0004DC6D0 /* MyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,6 +291,10 @@
 					};
 					768AF82E20EC713B00DCC047 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					76CFCE5421006AE0004DC6D0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 768AF81120EC5B1D00DCC047;
 					};
 				};
 			};
@@ -249,6 +313,7 @@
 			targets = (
 				768AF81120EC5B1D00DCC047 /* MyApp */,
 				768AF82E20EC713B00DCC047 /* TodayExtension */,
+				76CFCE5421006AE0004DC6D0 /* MyAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,6 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				768AF83920EC713B00DCC047 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFCE5321006AE0004DC6D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768AF81A20EC5B1D00DCC047 /* ViewController.m in Sources */,
+				76CFCE6221006CC6004DC6D0 /* PersonInfomation.m in Sources */,
 				76E6CAD620F741E0007E54CD /* ImageZoomView.m in Sources */,
 				768AF82520EC5B1F00DCC047 /* main.m in Sources */,
 				768AF81720EC5B1D00DCC047 /* AppDelegate.m in Sources */,
@@ -333,6 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76CFCE5121006AE0004DC6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CFCE5821006AE0004DC6D0 /* MyAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -340,6 +421,11 @@
 			isa = PBXTargetDependency;
 			target = 768AF82E20EC713B00DCC047 /* TodayExtension */;
 			targetProxy = 768AF83B20EC713B00DCC047 /* PBXContainerItemProxy */;
+		};
+		76CFCE5B21006AE0004DC6D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768AF81120EC5B1D00DCC047 /* MyApp */;
+			targetProxy = 76CFCE5A21006AE0004DC6D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,6 +645,44 @@
 			};
 			name = Release;
 		};
+		76CFCE5C21006AE0004DC6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 693F536PET;
+				INFOPLIST_FILE = MyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.imaginedays.MyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+			};
+			name = Debug;
+		};
+		76CFCE5D21006AE0004DC6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 693F536PET;
+				INFOPLIST_FILE = MyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.imaginedays.MyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +709,15 @@
 			buildConfigurations = (
 				768AF83E20EC713B00DCC047 /* Debug */,
 				768AF83F20EC713B00DCC047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CFCE5E21006AE0004DC6D0 /* Build configuration list for PBXNativeTarget "MyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CFCE5C21006AE0004DC6D0 /* Debug */,
+				76CFCE5D21006AE0004DC6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
