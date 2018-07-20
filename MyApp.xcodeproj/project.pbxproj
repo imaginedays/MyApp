@@ -17,6 +17,7 @@
 		768AF83620EC713B00DCC047 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768AF83520EC713B00DCC047 /* TodayViewController.m */; };
 		768AF83920EC713B00DCC047 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768AF83720EC713B00DCC047 /* MainInterface.storyboard */; };
 		768AF83D20EC713B00DCC047 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 768AF82F20EC713B00DCC047 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76AB8BB72101E6B700A87FE3 /* shellScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 76AB8BB62101E6B700A87FE3 /* shellScript.sh */; };
 		76CFCE5821006AE0004DC6D0 /* MyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFCE5721006AE0004DC6D0 /* MyAppTests.m */; };
 		76CFCE6221006CC6004DC6D0 /* PersonInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CFCE6121006CC6004DC6D0 /* PersonInfomation.m */; };
 		76E6CAD220F73C8F007E54CD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6CAD120F73C8F007E54CD /* Photos.framework */; };
@@ -76,6 +77,7 @@
 		768AF83520EC713B00DCC047 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		768AF83820EC713B00DCC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		768AF83A20EC713B00DCC047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76AB8BB62101E6B700A87FE3 /* shellScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = shellScript.sh; sourceTree = "<group>"; };
 		76CFCE5521006AE0004DC6D0 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CFCE5721006AE0004DC6D0 /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
 		76CFCE5921006AE0004DC6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		768AF81420EC5B1D00DCC047 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				76AB8BB32101E67700A87FE3 /* Shell */,
 				76CFCE5F21006C8D004DC6D0 /* Tests */,
 				76E6CAD320F741C5007E54CD /* ImageZoomView */,
 				768AF81520EC5B1D00DCC047 /* AppDelegate.h */,
@@ -178,6 +181,14 @@
 				768AF83A20EC713B00DCC047 /* Info.plist */,
 			);
 			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		76AB8BB32101E67700A87FE3 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				76AB8BB62101E6B700A87FE3 /* shellScript.sh */,
+			);
+			path = Shell;
 			sourceTree = "<group>";
 		};
 		76CFCE5621006AE0004DC6D0 /* MyAppTests */ = {
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768AF82220EC5B1F00DCC047 /* LaunchScreen.storyboard in Resources */,
+				76AB8BB72101E6B700A87FE3 /* shellScript.sh in Resources */,
 				768AF81F20EC5B1F00DCC047 /* Assets.xcassets in Resources */,
 				768AF81D20EC5B1D00DCC047 /* Main.storyboard in Resources */,
 			);
